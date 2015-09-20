@@ -1,13 +1,14 @@
 package com.suhorukov.calculator;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
  * Created by Администратор on 19.09.2015.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         if (args[0].indexOf("-f") > 0 && args[1].length() > 0)
         {
