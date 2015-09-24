@@ -1,4 +1,5 @@
-package com.suhorukov.calculator;
+package com.suhorukov.calculator.test;
+import com.suhorukov.calculator.Main;
 import junit.framework.TestCase;
 /**
  * Created by Администратор on 24.09.2015.
@@ -12,7 +13,7 @@ public class FirstTest extends TestCase {
     }
 
     public void testMaxInt() throws  Exception{
-        int result = Main.maxInt(1,3);
+        int result = Main.maxInt(1, 3);
         assertFalse(1==result);
     }
 
