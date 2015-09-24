@@ -19,4 +19,7 @@ public class Main {
         }
 
     }
+
+    public static int maxInt(int x, int y){return x>y?x:y;};
+    public static double avg(int x, int y){return (Double.valueOf(x)+y)/2;}
 }
