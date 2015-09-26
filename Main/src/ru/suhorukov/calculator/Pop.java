@@ -1,9 +1,6 @@
-package com.suhorukov.calculator;
-
-
+package ru.suhorukov.calculator;
 
 import java.util.*;
-
 /**
  * Created by Администратор on 19.09.2015.
  */

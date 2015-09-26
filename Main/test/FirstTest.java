@@ -1,5 +1,5 @@
-package com.suhorukov.calculator.test;
-import com.suhorukov.calculator.Main;
+package ru.suhorukov.calculator.test;
+import ru.suhorukov.calculator.Main;
 import junit.framework.TestCase;
 /**
  * Created by Администратор on 24.09.2015.

@@ -1,15 +1,14 @@
-package com.suhorukov.calculator;
+package ru.suhorukov.calculator;
 
-
-
-import java.util.*;
+import java.util.Map;
+import java.util.Stack;
 
 /**
  * Created by Администратор on 19.09.2015.
  */
-public class Div implements Command {
+public class Add implements Command {
     @Override
     public void execute(Stack<Double> stack, Map<String, Double> vars, String[] args) {
-        stack.push(stack.pop() / stack.pop());
+
     }
 }

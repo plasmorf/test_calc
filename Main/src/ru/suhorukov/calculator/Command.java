@@ -1,5 +1,4 @@
-package com.suhorukov.calculator;
-
+package ru.suhorukov.calculator;
 
 import java.util.*;
 
