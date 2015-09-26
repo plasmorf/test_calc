@@ -14,13 +14,14 @@ public class Calculator {
 
     public void exec (){
         String []str;
-
+        Stack<Double> vstack = new Stack<>();
+        cmds = new HashMap<>();
         do {
-            str = scanner.next().split(" ");
+            str = scanner.nextLine().split(" ");
             if (str.length > 0 ) {
-                Stack<Double> vstack = new Stack<>();
                 Command c = commandList.get(str[0]);
-                c.execute(vstack, cmds, str);
+                if (c!=null)
+                    c.execute(vstack, cmds, str);
             };
 
         }while (str[0].equals("exit") || scanner.hasNext());
@@ -28,7 +29,7 @@ public class Calculator {
     
     Calculator(Scanner pscanner){
         Properties prop = new Properties();
-        Map<String, Command> commandList = new HashMap<>();
+        commandList = new HashMap<>();
 
         try (InputStream resourceAsStream = Calculator.class.getResourceAsStream("CmdList.properties")){
             prop.load(resourceAsStream);
