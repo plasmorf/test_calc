@@ -9,5 +9,6 @@ public class Div implements Command {
     @Override
     public void execute(Stack<Double> stack, Map<String, Double> vars, String[] args) {
         stack.push(stack.pop() / stack.pop());
+
     }
 }

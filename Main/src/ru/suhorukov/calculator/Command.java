@@ -7,4 +7,5 @@ import java.util.*;
  */
 public interface Command {
     void execute(Stack<Double> stack, Map<String, Double> vars, String []args);
+    void exec(String[] args);
 }
